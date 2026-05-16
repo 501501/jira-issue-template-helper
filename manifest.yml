@@ -1,0 +1,26 @@
+modules:
+  jira:globalPage:
+    - key: issue-template-global-page
+      resource: global-page
+      render: native
+      resolver:
+        function: resolver
+      title: Issue Template Helper
+      route: issue-template
+  function:
+    - key: resolver
+      handler: index.handler
+resources:
+  - key: global-page
+    path: src/frontend/global-page/index.jsx
+permissions:
+  scopes:
+    - read:jira-work
+    - write:jira-work
+    - storage:app
+app:
+  runtime:
+    name: nodejs24.x
+    memoryMB: 256
+    architecture: arm64
+  id: ari:cloud:ecosystem::app/ec545038-e173-48c9-9c89-d4dddd1e2084
