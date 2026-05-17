@@ -2,10 +2,27 @@
 
 Atlassian Forge UI Kit 2 기반의 Jira 앱입니다. 기획, QA, QC 담당자가 Jira 이슈를 만들 때 필요한 정보를 빠뜨리지 않도록 이슈 유형별 템플릿을 제공하고, 입력값을 Jira 이슈 본문으로 정리해 생성합니다.
 
-> 데모 스크린샷은 `docs/screenshots/` 디렉터리에 추가합니다.
->
-> - `docs/screenshots/global-page.png` — 템플릿 선택 및 이슈 입력 화면
-> - `docs/screenshots/created.png` — 이슈 생성 완료 후 링크 노출
+## 데모 화면
+
+### 템플릿 선택 및 이슈 입력
+
+![템플릿 선택 및 이슈 입력](docs/screenshots/global-page.png)
+
+### Bug 템플릿 입력 예시
+
+![Bug 템플릿 입력 예시](docs/screenshots/bug-template-filled.png)
+
+### 필수 입력값 검증
+
+![필수 입력값 검증](docs/screenshots/validation.png)
+
+### 이슈 생성 완료
+
+![이슈 생성 완료](docs/screenshots/created.png)
+
+### 생성된 Jira 이슈
+
+![생성된 Jira 이슈](docs/screenshots/issue-detail.png)
 
 ---
 
