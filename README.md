@@ -38,11 +38,11 @@ Atlassian Forge UI Kit 2 기반의 Jira 앱입니다. 기획, QA, QC 담당자�
 
 | 문제 | 본 앱이 제공하는 해결책 |
 | --- | --- |
-| 이슈 작성자가 양식을 매번 새로 채운다 | Jira globalPage에 Bug / Feature Request / QA Defect 템플릿을 제공한다. |
-| 필수 정보가 누락된 채 이슈가 등록된다 | 템플릿의 `required` 필드를 검사해 누락 시 생성 전에 안내한다. |
-| 이슈 본문 포맷이 사용자마다 다르다 | 입력값을 ADF(Atlassian Document Format) 문서로 변환해 동일한 형식의 description으로 생성한다. |
-| Jira 사이트마다 이슈 유형 이름이 다를 수 있다 | 프로젝트별 실제 이슈 유형 목록을 REST API로 조회해 선택하게 한다. |
-| 자주 쓰는 입력 양식을 재사용하기 어렵다 | 현재 입력값을 기본값으로 가진 사용자 템플릿을 Forge KVS에 저장하고 다시 불러온다. |
+| 이슈 작성자가 양식을 매번 새로 채웁니다. | Jira globalPage에 Bug / Feature Request / QA Defect 템플릿을 제공합니다. |
+| 필수 정보가 누락된 채 이슈가 등록됩니다. | 템플릿의 `required` 필드를 검사해 누락 시 생성 전에 안내합니다. |
+| 이슈 본문 포맷이 사용자마다 다릅니다. | 입력값을 ADF(Atlassian Document Format) 문서로 변환해 동일한 형식의 description으로 생성합니다. |
+| Jira 사이트마다 이슈 유형 이름이 다를 수 있습니다. | 프로젝트별 실제 이슈 유형 목록을 REST API로 조회해 선택하게 합니다. |
+| 자주 쓰는 입력 양식을 재사용하기 어렵습니다. | 현재 입력값을 기본값으로 가진 사용자 템플릿을 Forge KVS에 저장하고 다시 불러옵니다. |
 
 ## 3. 주요 기능
 
@@ -113,7 +113,7 @@ jira-issue-template-helper/
    │ registerTemplates / registerIssues / registerProjects
    ▼
 [Resolver handlers]
-   │ ├─ Forge KVS: 사용자 템플릿 저장/조회
+   │ ├─ Forge KVS: 사용자 템플릿 저장/조회/삭제
    │ ├─ Jira REST: 프로젝트/이슈 유형 조회 및 이슈 생성
    │ └─ src/lib: 검증 및 ADF 변환
    ▼
